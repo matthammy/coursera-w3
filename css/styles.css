@@ -1,0 +1,143 @@
+body {
+	font-size: 16px;
+	color: white;
+	font-family: Avenir;
+	background-color: #41B6E6;	
+}
+
+/** HEADER **/
+
+#header-nav {
+	background-color: whitesmoke;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img {
+	background: url('../images/logo-img-md.png') no-repeat;
+	width: 90px;
+	height: 71px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+	padding-top: 5px;
+}
+
+.navbar-brand h1 { /*brand name*/
+	font-family: Avenir;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar-brand p {
+	font-family: Avenir;
+	font-size: 0.75em;
+	font-weight: bold;	
+
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #DB3EB1;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+#nav-list a span {
+	font-size: 1.2em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #DB3EB1;
+}	
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top:-30px;
+}
+
+/* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+	position: relative;
+	box-shadow: 0 0 50px #3F0C1F
+	border: 2px solid #3F0C1F
+}
+.jumbotron span{
+	position: absolute;
+	color: #3C3D40;
+	font-size: 1.6em;
+	top: 0;
+}
+
+/** Large devices **/
+@media (min-width: 1200px) {
+.container .jumbotron {
+	position: relative;
+	height: 400px;
+	box-shadow: 0 0 50px #3F0C1F
+	border: 2px solid #3F0C1F
+	}
+}
+/** Medium devices **/
+@media (min-width: 992px) and (max-width: 1199px) {
+.container .jumbotron {
+	position: relative;
+	height: 500px;
+	box-shadow: 0 0 50px #3F0C1F
+	border: 2px solid #3F0C1F
+	}
+}
+/** small devices **/
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-brand {
+		padding-top: 5px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 2.25vw;
+	}
+	.navbar-brand span {
+		font-size: 1.5vw;
+	}
+	.container .jumbotron {
+	position: relative;
+	height: 600px;
+	box-shadow: 0 0 50px #3F0C1F
+	border: 2px solid #3F0C1F
+	}
+}
+/** Extra small devices **/
+@media (max-width: 767px) {
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 3.5vw;
+	}
+	.navbar-brand span {
+		font-size: 2vw;
+	}
+	.container .jumbotron {
+	position: relative;
+	height: 850px;
+	box-shadow: 0 0 50px #3F0C1F
+	border: 2px solid #3F0C1F
+	top: 0;
+	}
+}
+
+
